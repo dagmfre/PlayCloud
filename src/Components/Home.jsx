@@ -1,28 +1,22 @@
-import Products from "./Products";
-import { useSelector } from "react-redux";
-import { Link } from "react-router-dom";
+// import { useSelector } from "react-redux";
+// import { Link } from "react-router-dom";
+import Login from "./Login";
 
 export default function Home() {
-  const total = useSelector((state) => state.cart.total);
-
   return (
     <div className="home">
-      <div className="home-cont">
-        <div className="navbar">
-          <div>
-            <h1>Redux Toolkit</h1>
-            <p>Products</p>
-          </div>
-          <div>
-            <Link to="/cart">
-              {" "}
-              <i class="fa-solid fa-cart-shopping"></i>
-            </Link>
-            <p>{total}</p>
-          </div>
-        </div>
-      </div>
-      <Products />
+      <h1>fdgvdfvd</h1>
+      <iframe
+        title="Spotify Embed: Recommendation Playlist "
+        src={`https://open.spotify.com/embed/playlist/6Q5VCWX86yJeOOwBl539up?utm_source=generator&theme=0`}
+        width="100%"
+        height="100%"
+        style={{ minHeight: "360px" }}
+        frameBorder="0"
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"
+      />
+      <Login />
     </div>
   );
 }

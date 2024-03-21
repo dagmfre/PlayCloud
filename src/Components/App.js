@@ -1,6 +1,5 @@
 import { Route, Routes } from "react-router-dom";
 import Home from "./Home";
-import Cart from "./Cart";
 import { Global, css } from "@emotion/react";
 
 // Define global styles
@@ -18,7 +17,6 @@ const App = () => {
       <Global styles={globalStyles} />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/cart" element={<Cart />} />
       </Routes>
     </>
   );
